@@ -383,8 +383,7 @@ done
 banner() {
 
 printf $ij"Hedy"
-printf $ij"[$pu+$ij]$pu Instagram:https://www.instagram.com/siapa_namasaya23/"
-printf $ij"[$pu+$ij]$pu Instagram:https://www.instagram.com/wong_biasa0723/"
+
 printf "
 ░██████╗░██████╗░░██████╗░░░░░░██╗░░░░░░█████╗░░█████╗░░█████╗░████████╗██╗░█████╗░███╗░░██╗
 ██╔════╝░██╔══██╗██╔════╝░░░░░░██║░░░░░██╔══██╗██╔══██╗██╔══██╗╚══██╔══╝██║██╔══██╗████╗░██║
