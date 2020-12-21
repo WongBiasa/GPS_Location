@@ -325,7 +325,7 @@ unzip ngrok-stable-linux-386.zip > /dev/null 2>&1
 chmod +x ngrok
 rm -rf ngrok-stable-linux-386.zip
 else
-printf "\e[1;93m[!] Download error... \e[0m\n"
+printf "\e[1;93m[!] Download error[WhoMHw]... \e[0m\n"
 exit 1
 fi
 fi
@@ -334,7 +334,7 @@ fi
 printf "\e[1;92m[\e[0m*\e[1;92m] Start php server...\n"
 php -t "server/" -S 0.0.0.0:3333 > /dev/null 2>&1 & 
 sleep 2
-printf "\e[1;92m[\e[0m*\e[1;92m] Start ngrok server...\n"
+printf "\e[1;92m[\e[0m*\e[1;92m] Start ngrok server(3333)...\n"
 ./ngrok http 3333 > /dev/null 2>&1 &
 sleep 10
 
@@ -391,7 +391,7 @@ printf "
 ██║░░╚██╗██╔═══╝░░╚═══██╗╚════╝██║░░░░░██║░░██║██║░░██╗██╔══██║░░░██║░░░██║██║░░██║██║╚████║
 ╚██████╔╝██║░░░░░██████╔╝░░░░░░███████╗╚█████╔╝╚█████╔╝██║░░██║░░░██║░░░██║╚█████╔╝██║░╚███║
 ░╚═════╝░╚═╝░░░░░╚═════╝░░░░░░░╚══════╝░╚════╝░░╚════╝░╚═╝░░╚═╝░░░╚═╝░░░╚═╝░╚════╝░╚═╝░░╚══╝"
-printf
+printf $bi"WhoMHw"
 printf "V.0.02 || thelinux"
 printf $ij"[$pu+$ij]$pu YouTube:https://www.youtube.com/channel/UChMIkGetnMB4qq9K5kNwkXA/featured"
 printf $ij"[$pu+$ij]$pu Github:https://github.com/WongBiasa"
