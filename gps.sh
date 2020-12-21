@@ -345,7 +345,7 @@ checkfound
 
 start1() {
 printf "\n"
-printf "\e[1;92m[\e[0m\e[1;77m01\e[0m\e[1;92m]\e[0m\e[1;93m pakai Serveo.net (SSH Tunelling, Best!)\e[0m\n"
+printf "\e[1;92m[\e[0m\e[1;77m01\e[0m\e[1;92m]\e[0m\e[1;93m pakai Serveo.net (404,Not Found!)\e[0m\n"
 printf "\e[1;92m[\e[0m\e[1;77m02\e[0m\e[1;92m]\e[0m\e[1;93m pakai Ngrok\e[0m\n"
 default_option_server="1"
 read -p $'\n\e[1;92m[\e[0m\e[1;77m*\e[0m\e[1;92m] Choose a Port Forwarding option: \e[0m\en' option_server
