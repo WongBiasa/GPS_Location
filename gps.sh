@@ -392,7 +392,7 @@ printf "░╚═════╝░╚═╝░░░░░╚═════╝
 printf "V.0.02 || thelinux"
 printf $ij"[$pu+$ij]$pu YouTube:https://www.youtube.com/channel/UChMIkGetnMB4qq9K5kNwkXA/featured"
 printf $ij"[$pu+$ij]$pu Github:https://github.com/WongBiasa"
-printf $ij"[$pu+$ij]$pu Github:https://github.com/WHoMhw
+printf $ij"[$pu+$ij]$pu Github:https://github.com/WHoMhw"
 
 
 }
